@@ -10,6 +10,8 @@ import { RecipeItemComponent } from './views/recipe/recipe-item/recipe-item.comp
 import { ShoppingListComponent } from './views/shopping/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './views/shopping/shopping-edit/shopping-edit.component';
 import { HeaderComponent } from './views/header/header.component';
+import { CockpitComponent } from './views/server/cockpit/cockpit.component';
+import { SeverElementComponent } from './views/server/sever-element/sever-element.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HeaderComponent } from './views/header/header.component';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    HeaderComponent
+    HeaderComponent,
+    CockpitComponent,
+    SeverElementComponent
   ],
   imports: [
     BrowserModule,

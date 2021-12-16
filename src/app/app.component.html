@@ -1,4 +1,4 @@
-<app-header></app-header>
+<!-- <app-header></app-header>
 <div class=" container row">
     <div class="col-md-6 col-sm-12">
         <app-recipe-list></app-recipe-list>
@@ -6,5 +6,12 @@
       <div class="col-md-6 col-sm-12">
           <app-recipe-details></app-recipe-details>
       </div>
-</div>
+</div> -->
 
+    <app-cockpit></app-cockpit>
+
+    <app-sever-element
+  *ngFor="let serverElement of serverElements"
+  [serverEle]="serverElement"
+
+    ></app-sever-element>

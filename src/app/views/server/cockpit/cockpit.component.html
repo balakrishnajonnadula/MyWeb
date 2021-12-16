@@ -1,12 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="mb-3">
-            <label class="form-label">Example label</label>
-            <input type="text" class="form-control"  placeholder="Example input placeholder" [(ngModel)]="newServerName">
+            <label class="form-label">Add new Server</label>
+            <input type="text" class="form-control"  placeholder="Enter server Name" [(ngModel)]="newServerName">
           </div>
           <div class="mb-3">
-            <label class="form-label">Another label</label>
-            <input type="text" class="form-control"  placeholder="Another input placeholder" [(ngModel)]="newServerContent">
+            <label class="form-label">Add server Content</label>
+            <input type="text" class="form-control"  placeholder="Enter server Content" [(ngModel)]="newServerContent">
           </div>
           <div class="mb-3">
               <button class="btn btn-primary me-2" (click)="onAddServer()">Add Server</button>

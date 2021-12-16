@@ -12,6 +12,8 @@ import { ShoppingEditComponent } from './views/shopping/shopping-edit/shopping-e
 import { HeaderComponent } from './views/header/header.component';
 import { CockpitComponent } from './views/server/cockpit/cockpit.component';
 import { SeverElementComponent } from './views/server/sever-element/sever-element.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SeverElementComponent } from './views/server/sever-element/sever-elemen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

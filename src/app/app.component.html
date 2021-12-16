@@ -8,10 +8,9 @@
       </div>
 </div> -->
 
-    <app-cockpit></app-cockpit>
+<app-cockpit (serverCreated)="onServerAdded($event)" (blueprintCreated)="onBlueprintCreated($event)"></app-cockpit>
 
-    <app-sever-element
+<app-sever-element
   *ngFor="let serverElement of serverElements"
-  [serverEle]="serverElement"
-
-    ></app-sever-element>
+  [element]="serverElement"
+></app-sever-element>

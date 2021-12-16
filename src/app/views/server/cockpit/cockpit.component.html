@@ -2,15 +2,15 @@
     <div class="row">
         <div class="mb-3">
             <label class="form-label">Example label</label>
-            <input type="text" class="form-control"  placeholder="Example input placeholder">
+            <input type="text" class="form-control"  placeholder="Example input placeholder" [(ngModel)]="newServerName">
           </div>
           <div class="mb-3">
             <label class="form-label">Another label</label>
-            <input type="text" class="form-control"  placeholder="Another input placeholder">
+            <input type="text" class="form-control"  placeholder="Another input placeholder" [(ngModel)]="newServerContent">
           </div>
           <div class="mb-3">
-              <button class="btn btn-primary me-2">Add Server</button>
-              <button class="btn btn-danger">Add Server blueprint</button>
+              <button class="btn btn-primary me-2" (click)="onAddServer()">Add Server</button>
+              <button class="btn btn-danger" (click)="onBlueprintCreated()">Add Server blueprint</button>
           </div>
     </div>
 </div>

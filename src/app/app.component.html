@@ -11,6 +11,6 @@
 <app-cockpit (serverCreated)="onServerAdded($event)" (blueprintCreated)="onBlueprintCreated($event)"></app-cockpit>
 
 <app-sever-element
-  *ngFor="let serverElement of serverElements"
+  *ngFor="let serverElement of serverElements; let i = index"
   [element]="serverElement"
 ></app-sever-element>

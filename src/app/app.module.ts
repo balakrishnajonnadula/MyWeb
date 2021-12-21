@@ -15,6 +15,10 @@ import { SeverElementComponent } from './views/server/sever-element/sever-elemen
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';    
+import { ToastrModule } from 'ngx-toastr';
+ 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,9 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,    
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

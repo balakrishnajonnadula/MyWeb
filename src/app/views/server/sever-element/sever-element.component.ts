@@ -1,4 +1,8 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
+import { NotifucationService } from '../../../services/toastr.service';
+
+
+
 
 @Component({
   selector: 'app-sever-element',
@@ -8,11 +12,14 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 })
 export class SeverElementComponent implements OnInit {
 
-  @Input() element : any =  {type: '', name:'', content:'',}
+  @Input() element: any = { type: '', name: '', content: '', }
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
+  
 }
+
+

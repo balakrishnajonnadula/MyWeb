@@ -1,16 +1,19 @@
-<!-- <app-header></app-header>
-<div class=" container row">
-    <div class="col-md-6 col-sm-12">
-        <app-recipe-list></app-recipe-list>
-      </div>
-      <div class="col-md-6 col-sm-12">
-          <app-recipe-details></app-recipe-details>
-      </div>
-</div> -->
+<app-header></app-header>
+<div class="container row">
+  <div class="col-md-6 col-sm-12">
+    <app-recipe-list></app-recipe-list>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <app-recipe-details></app-recipe-details>
+  </div>
+</div>
 
-<app-cockpit (serverCreated)="onServerAdded($event)" (blueprintCreated)="onBlueprintCreated($event)"></app-cockpit>
+<app-cockpit
+  (serverCreated)="onServerAdded($event)"
+  (blueprintCreated)="onBlueprintCreated($event)"
+></app-cockpit>
 
 <app-sever-element
   *ngFor="let serverElement of serverElements; let i = index"
-  [element]="serverElement"
-></app-sever-element>
+  [element]="serverElement">
+</app-sever-element>
